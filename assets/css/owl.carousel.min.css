@@ -1,0 +1,126 @@
+/**
+ * Owl Carousel v2.2.0
+ * Copyright 2013-2016 David Deutsch
+ * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
+ */
+
+ .clients-area .owl-carousel {
+    display: none;
+    width: 50%;
+    z-index: 1;
+    margin-left: 300px;
+}
+
+.clients-area .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+}
+
+.clients-area .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clients-area .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.clients-area .owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+}
+
+.clients-area .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+}
+
+.clients-area .owl-carousel .owl-dots.disabled,
+.clients-area .owl-carousel .owl-nav.disabled {
+    display: none;
+}
+
+.no-js .owl-carousel,
+.clients-area .owl-carousel.owl-loaded {
+    display: block;
+}
+
+.clients-area .owl-carousel .owl-dot,
+.clients-area .owl-carousel .owl-nav .owl-next,
+.clients-area .owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.clients-area .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block;
+}
+
+.clients-area .owl-carousel.owl-hidden {
+    opacity: 0;
+}
+
+.clients-area .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden;
+}
+
+.clients-area .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.clients-area .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab;
+}
+
+.clients-area .owl-carousel.owl-rtl {
+    direction: rtl;
+}
+
+.clients-area .owl-carousel.owl-rtl .owl-item {
+    float: right;
+}
+
+.clients-area .owl-carousel .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.clients-area .owl-carousel .owl-animated-in {
+    z-index: 0;
+}
+
+.clients-area .owl-carousel .owl-animated-out {
+    z-index: 1;
+}
+
+.clients-area .owl-carousel .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

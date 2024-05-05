@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery</title>
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+    <style>
+        /* Gaya CSS untuk galeri */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Gaya CSS untuk header dan footer */
+        header, footer {
+            background-color: #212121;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Gaya CSS untuk menu */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Gaya CSS untuk tombol kembali */
+        .kembali {
+            padding: 10px 20px; /* Ukuran padding untuk tombol kembali */
+            text-align: center;
+            display: inline-block;
+            font-size: 16px; /* Ukuran font untuk tombol kembali */
+            margin-right: 20px;
+            cursor: pointer;
+            background-color: #e2e600; /* Warna latar belakang untuk tombol kembali */
+            color: white; /* Warna teks untuk tombol kembali */
+            border: none;
+            border-radius: 5px; /* Membuat sudut tombol kembali menjadi sedikit melengkung */
+            text-decoration: none;
+        }
+
+        .kembali img {
+            width: 20px; /* Ukuran gambar untuk tombol kembali */
+            height: 20px;
+            margin-right: 5px; /* Jarak antara gambar dan teks */
+        }
+
+        .kembali:hover {
+            background-color: #eeff00; /* Efek hover ketika kursor diarahkan ke tombol kembali */
+        }
+
+        /* Gaya CSS untuk body */
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="D:\Document\Browny Free Website Template - Free-CSS.com\browny-v1.0\index.html" class="kembali"><img src="assets\logo\kembali.png" alt="Kembali"></a>
+        </nav>
+        <h1>Welcome to Our Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="D:\Document\Browny Free Website Template - Free-CSS.com\browny-v1.0\deskripsi.html">Product Description</a></li>
+                <li><a href="D:\Document\Browny Free Website Template - Free-CSS.com\browny-v1.0\gallery.html">Our Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>COMING SOON</h1>
+    <div class="gallery">
+        <img src="gambar1.jpg" alt="Gambar 1">
+        <img src="gambar2.jpg" alt="Gambar 2">
+        <img src="gambar3.jpg" alt="Gambar 3">
+        <!-- Tambahkan gambar-gambar lainnya di sini -->
+    </div>
+    <footer>
+        <p>&copy; 2024 PT. VISA LAKSMANA GLOBAL. All rights reserved.</p>
+        <p>Designed by: Pandurimba and developed by <a href="https://www.themesine.com/">themesine</a></p>
+    </footer>
+</body>
+</html>
